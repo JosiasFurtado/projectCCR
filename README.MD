@@ -2,19 +2,19 @@ Desafio proposto pela CCR
 
 # Carreteiro
 
-// Breve descrição
-
 ## Começando
+
+Rode o App diretamente no seu celular baixando o aplicativo Expo no Play Store ou Apple Store e escaneie o QR Code abaixo
+
+![QRCode](https://github.com/JosiasFurtado/projectCCR/blob/master/screenshots/qrcode.png)
+
+OU
 
 Faça o clone deste repositório e instale as dependencias usando:
 
 ```
 yarn OU npm install
 ```
-
-OU instale diretamente no seu celular baixando o aplicativo Expo na Play Store ou App Store e escaneie o QR Code abaixo:
-
-// QR CODE
 
 ### Pré-requisitos
 
@@ -32,7 +32,7 @@ yarn start OU npm start
 
 ## Screenshots
 
-// Screenshots
+- [Screenshots](https://github.com/JosiasFurtado/projectCCR/blob/master/screenshots/README.MD)
 
 ## Foi utilizado
 
@@ -44,5 +44,5 @@ yarn start OU npm start
 
 ## Autores
 
-- [Peterson Passos](https://github.com/PetersonJFP)
 - [Josias Furtado](https://github.com/josiasfurtado)
+- [Peterson Passos](https://github.com/PetersonJFP)
