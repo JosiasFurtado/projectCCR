@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://github.com/JosiasFurtado/projectCCR/blob/master/assets/logo.png">
+  <img src="https://github.com/JosiasFurtado/projectCCR/blob/master/assets/logo.png">
 </p>
 
 Desafio proposto pela CCR
