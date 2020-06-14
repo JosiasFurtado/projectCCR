@@ -5,6 +5,8 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Gps from './pages/Gps'
+import Teleconsulta from './pages/Teleconsulta'
+
 import {
   MaterialCommunityIcons,
   FontAwesome,
@@ -18,7 +20,7 @@ function StackRoutes() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Teleconsulta" component={Teleconsulta} />
     </Stack.Navigator>
   )
 }
@@ -47,7 +49,7 @@ function TabNav() {
           },
         }}
         name="Home"
-        component={Home}
+        component={StackRoutes}
       />
       <Tab.Screen
         options={{

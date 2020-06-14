@@ -99,7 +99,7 @@ const Profile: React.FC = () => {
         <View style={tailwind('flex-row')}>
           <TouchableOpacity
             style={tailwind(
-              'border mr-2 rounded-lg items-center justify-between border-gray-300 w-1/2 px-2',
+              'border rounded-lg items-center justify-between border-gray-300 w-1/2',
             )}
           >
             <Text
