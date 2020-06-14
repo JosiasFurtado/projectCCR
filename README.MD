@@ -38,9 +38,11 @@ yarn start OU npm start
 
 - [React Native](https://facebook.github.io/react-native/docs/getting-started)
 - [Expo](https://docs.expo.io/versions/latest/)
-- [React Navigation](https://reactnavigation.org/docs/en/getting-started.html)
+- [React Navigation](https://reactnavigation.org/)
 - [React Hooks](https://pt-br.reactjs.org/docs/hooks-overview.html)
 - [Typescript](https://www.typescriptlang.org/docs/home.html)
+- [Tailwind RN](https://github.com/vadimdemedes/tailwind-rn)
+- [Styled Components](https://styled-components.com/)
 
 ## Autores
 
