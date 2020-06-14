@@ -3,10 +3,13 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import tailwind from 'tailwind-rn'
 import { Foundation } from '@expo/vector-icons'
 
-const Alert: React.FC = () => {
+interface AlertProps {
+  readonly classes?: string
+}
+const Alert: React.FC<AlertProps> = ({ classes }) => {
   const [openAlert, setOpenAlert] = React.useState<Boolean>()
   return (
-    <View style={tailwind('flex-row h-12 justify-end items-end')}>
+    <View style={tailwind(`flex-row h-12 justify-end items-end ${classes}`)}>
       {openAlert && (
         <View style={tailwind('bg-white rounded-lg mr-1 py-2')}>
           <TouchableOpacity>

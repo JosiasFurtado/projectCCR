@@ -2,7 +2,6 @@ import React from 'react'
 import tailwind from 'tailwind-rn'
 import { SafeAreaView, View, Text, TouchableOpacity } from 'react-native'
 import { FontAwesome5 } from '@expo/vector-icons'
-const fakeData = [{ id: 1, name: 'Buscar Frete', iconName: '' }]
 
 const Home: React.FC = () => {
   return (
