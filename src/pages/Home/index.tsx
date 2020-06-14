@@ -2,10 +2,12 @@ import React from 'react'
 import tailwind from 'tailwind-rn'
 import { SafeAreaView, View, Text, TouchableOpacity } from 'react-native'
 import { FontAwesome5 } from '@expo/vector-icons'
+import Header from '../../components/Header'
 
 const Home: React.FC = () => {
   return (
     <SafeAreaView style={tailwind('bg-gray-100 h-full')}>
+      <Header />
       <View style={tailwind('p-4')}>
         <View style={tailwind('flex flex-row -ml-2')}>
           <TouchableOpacity

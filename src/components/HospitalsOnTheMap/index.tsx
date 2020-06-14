@@ -7,7 +7,7 @@ interface HospitalsOnTheMapProps {
   readonly classes?: string
 }
 const HospitalsOnTheMap: React.FC<HospitalsOnTheMapProps> = ({ classes }) => {
-  const [openHospitals, setOpenHospitals] = React.useState<Boolean>()
+  const [openHospitals, setOpenHospitals] = React.useState<Boolean>(true)
   return (
     <View style={tailwind(`flex-row h-12 justify-end items-end ${classes}`)}>
       <TouchableOpacity
