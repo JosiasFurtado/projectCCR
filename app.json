@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "projectfirebase",
-    "slug": "projectfirebase",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "Carreteiro",
+    "slug": "carreteiro",
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.umbe.carreteiro"
+    },
+    "android": {
+      "package": "com.umbe.carreteiro"
     }
   }
 }
