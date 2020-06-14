@@ -1,44 +1,56 @@
 import React from 'react'
 import tailwind from 'tailwind-rn'
-import styled from 'styled-components/native'
-import { SafeAreaView, View, Text, Image, TouchableOpacity } from 'react-native'
+import {
+  SafeAreaView,
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native'
+import Header from '../../components/Header'
 import walk from '../../../assets/walk.png'
 import heart from '../../../assets/heart.png'
 import sleep from '../../../assets/sleep.png'
-const ProfileImg = styled.Image`
-  box-shadow: 10px 15px 15px #000;
-  border-radius: 8px;
-  width: 90px;
-  height: 90px;
-`
+import desconto from '../../../assets/desconto.png'
+import map from '../../../assets/map.png'
 
 const Profile: React.FC = () => {
   return (
     <SafeAreaView style={tailwind('bg-white h-full')}>
-      <View style={tailwind('px-2')}>
-        <View style={tailwind('p-4 flex-row mb-4')}>
-          <ProfileImg
-            source={{
-              uri:
-                'https://guiabrasilnet.com.br/wp-content/uploads/2015/09/binocargapesada_guiabrasilnet.jpg',
-            }}
-          />
-          <View style={tailwind('px-4')}>
+      <Header />
+      <ScrollView style={tailwind('px-2')}>
+        <View style={tailwind('p-4 flex-row')}>
+          <View>
             <Text
               allowFontScaling={false}
               style={tailwind('font-bold text-xl')}
             >
-              Bino Garcia
+              Usuário
             </Text>
             <Text
               allowFontScaling={false}
-              style={tailwind('font-bold text-lg text-gray-700')}
+              style={tailwind('font-bold text-lg text-gray-600 mb-4')}
             >
-              Idade: 80
+              eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9
             </Text>
+            <View style={tailwind('flex-row justify-between')}>
+              <Text
+                allowFontScaling={false}
+                style={tailwind('font-bold text-xl')}
+              >
+                50 Anos
+              </Text>
+              <Text
+                allowFontScaling={false}
+                style={tailwind('font-bold text-xl')}
+              >
+                CCRT: 200
+              </Text>
+            </View>
           </View>
         </View>
-        <View style={tailwind('p-4 border border-gray-300 rounded-lg')}>
+        <View style={tailwind('p-4 border border-gray-300 rounded-lg mb-4')}>
           <View style={tailwind('flex-row items-center mb-4')}>
             <Image style={tailwind('h-12 w-12')} source={walk} />
             <Text
@@ -84,7 +96,35 @@ const Profile: React.FC = () => {
             </Text>
           </TouchableOpacity>
         </View>
-      </View>
+        <View style={tailwind('flex-row')}>
+          <TouchableOpacity
+            style={tailwind(
+              'border mr-2 rounded-lg items-center justify-between border-gray-300 w-1/2 px-2',
+            )}
+          >
+            <Text
+              allowFontScaling={false}
+              style={tailwind('font-bold text-xl text-center px-4 py-4')}
+            >
+              Ver descontos
+            </Text>
+            <Image style={tailwind('h-32 w-32 mb-4')} source={desconto} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={tailwind(
+              'border rounded-lg items-center justify-between border-gray-300 w-1/2',
+            )}
+          >
+            <Text
+              allowFontScaling={false}
+              style={tailwind('font-bold text-xl text-center px-4 py-4')}
+            >
+              Ver viagens realizadas
+            </Text>
+            <Image style={tailwind('h-32 w-32 rounded-lg mb-4')} source={map} />
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }
